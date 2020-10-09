@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Programming paradigm</title>
+</head>
+
+<body>
+<h1>Programming paradigm</h1>
+<h2>Communication styles</h2>
+
+<h3>Resources</h3>
+<ol>
+	<li><a href="https://en.wikipedia.org/wiki/Programming_paradigm">Wikipedia</a> Programming paradigm</li>
+</ol>
+
+<h3>Technologies</h3>
+<ol>
+	<li>imperative: exess variable which is often easier to understand. For loops are common
+		<ol>
+			<li>procedural: recipe with step by step approach</li>
+			<li>object-oriented: Original React.js approach (<i>class syntax</i>)</li>
+		</ol>
+	</li>
+	<li>declarative: specific functions that may be called in any order. Interators are common
+		<ol>
+			<li>functional: React Hooks recommended</li>
+			<li>logic</li>
+			<li>mathematical</li>
+		</ol>
+	</li>
+</ol>
+
+<h3>Samples</h3>
+<pre>
+	// imperative
+	// output 1, 2, 3, 4, 5... 10
+	for (const x = 1; x <= 10; i++) {
+		console.log(x);
+	}
+
+	// declarative
+	// output 1, 2, 3, 4, 5... 10
+	Array.from(Array(10).keys()).map((index) => {
+		console.log(index + 1);
+	});
+
+	// Or using variable names
+	const plusOne = (index) => console.log(index + 1);
+	const listOneToTen = Array.from(Array(10).keys());
+
+	listOneToTen.map(plusOne)
+
+	// splice, push, shift, unshift will manipulate a single Array
+	// map, reduce, filter will read an array and output a new array
+</pre>
+</body>
+</html>

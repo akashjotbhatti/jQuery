@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title>Flickr Map</title>
+	<!-- Attach Mapbox styles -->
+	<link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<body>
+  <h1>Slippy Map</h1>
+  <h2>Map with Flickr pins</h2>
+
+  <h3>Goal</h3>
+  <p>As a user, I want to see pins of Vancouver beaches on a map. I want to see a photo in the pin details.</p>
+  <p>As a dev, Display a slippy map with a many pins representing photos found on Flickr. When user clicks on a pin, the photo will display in the info bubble.</p>
+
+  <h3>Technologies</h3>
+  <ul>
+    <li>Flickr API (Service)</li>
+    <li>Mapbox GL JS API (Library)</li>
+    <li>JavaScript</li>
+    <li>HTTP Request with Fetch</li>
+    <li>CSS</li>
+    <li>HTML</li>
+  </ul>
+
+  <h3>Resources</h3>
+  <ul>
+    <li><a href="https://www.flickr.com/services/api/flickr.photos.search.html">Flickr API documentation for geo photos</a></li>
+    <li><a href="https://docs.mapbox.com/mapbox-gl-js/overview/">Mapbox GL JS API</a></li>
+  </ul>
+
+	<h3>Live demo</h3>
+	<main id="map" style="height: 40rem;"></main>
+
+	<!-- Attach Mapbox library -->	
+	<script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
+	<!-- Attach all the bundles JavaScript files in /src/js -->
+	<script src="/js/critical.js"></script>
+	<script>loadFlickrMap();</script>
+</body>
+</html>

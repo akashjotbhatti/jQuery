@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Math Calculator</title>
+</head>
+<body>
+	<h3>Live demo</h3>
+	<input type="number" id="numA">
+	<select id="operator">
+		<option value="Add">+</option>
+		<option value="Subtract">-</option>
+		<option value="Multiply">*</option>
+		<option value="Divide">/</option>
+	</select>
+	<input type="number" id="numB">
+	<span id="answer"></span>
+
+	<!-- Attach all the bundles JavaScript files in /src/js -->
+	<script src="/js/critical.js"></script>
+	<!-- Execute page specific function -->
+	<script>bindCalc();</script>
+</body>
+</html>
