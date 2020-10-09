@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery events</title>
+	<style>
+		#hover { color: red; } /* normal */
+		#hover:hover { color: pink; } /* CSS hover */
+		.hover { text-decoration: none; } /* remove underline via JS hover */
+	</style>
+</head>
+<body>
+
+	<h1>Events</h1>
+	
+	<h3>Goal</h3>
+	<p>Learn the common mouse and keyboard events so jQuery may respond to a user's interactions.</p>
+	<p>As a developer, I want to interact with my jQuery playground to better understand all the events to bind the HTML alive. All of the events are seen in <a href="4events.teacher.html">the previous example using Classic JavaScript</a>.</p>
+
+	<h3>Technologies</h3>
+	<ol>
+		<li>jQuery</li>
+		<li>JavaScript</li>
+	</ol>
+
+	<h3>Resources</h3>
+	<ul>
+		<li><a href="http://api.jquery.com/category/events/">jQuery Events</a></li>
+		<li><a href="4events.teacher.html">Classic JavaScript Events</a></li>
+	</ul>
+	
+	<h3>Live demo</h3>
+	<a href="javascript:;">Dumb link (React security concern)</a><br>
+	<a href="#">Dumb link as # (preferred)</a><br>
+	<a href="#" onclick="clickLog()">Click event using HTML attribute JavaScript</a> (anti-pattern)<br>
+	<a href="#" id="click">Click event using traditional JS binding</a> (recommended)<br>
+	<a href="#" id="hover">Hover event</a><br>
+	
+	<form action="http://vanarts.com/" id="submit">
+		<input type="text" value="Blur/focus events" id="blur"><br>
+		<input type="text" value="Keyboard events" id="keyboard"><br>
+	
+		<input type="submit" value="Submit event">
+		<input type="button" value="Button not submit button" id="btn">
+	</form>
+
+<!-- Attach jQuery library -->
+<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+<!-- Attach all-the-app code -->
+<script src="/js/critical.js"></script>
+<!-- Page specific code -->
+<script>
+	jqueryEvents();
+</script>
+</body></html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>else</title>
+</head>
+<body>
+<h1>JavaScript Intro</h1>
+<h2>Else condition</h2>
+
+<h3>Goal</h3>
+<p>Support multiple logical paths with conditional else statements</p>
+
+<h3>Technologies</h3>
+<ul>
+	<li>JavaScript</li>
+</ul>
+
+<h3>Live demo</h3>
+	<script>
+		const getTypeOfWeek = (today) => {
+			/* operators
+			|| or (pipe pipe)
+			&& and (ampersand ampersand)
+			!== strict not equal
+			=== strict equal
+			*/
+			if (typeof today === 'number') {
+				return; // exit
+			}
+			
+			if (today === 'sat' || today === 'sun') {
+				return 'weekend';
+			} else if (today === undefined) {
+				return 'no value';
+			} else {
+				return 'weekday';
+			}
+		};
+
+		console.log(getTypeOfWeek('wed'));
+
+		// TODO inclass Log 'weekend' by calling the above function
+		// Do not change the above code
+		const result = getTypeOfWeek('sat');
+		console.log(result);
+</script>
+ 
+</body></html>

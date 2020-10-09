@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Number Input</title>
+</head>
+
+<body>
+	<h1>JavaScript Intro</h1>
+	<h2>Number</h2>
+
+	<h3>Goal</h3>
+	<p>As a user, I want to order some pizza.</p>
+
+	<h3>Technologies</h3>
+	<ul>
+		<li>JavaScript</li>
+	</ul>
+
+	<h3>Live demo</h3>
+	<form>
+		Pizza(s) <input type="text" class="input" value="2"><br>
+		<select id="cost">
+			<option value="9">Small</option>
+			<option value="12">Medium</option>
+			<option value="20.10" selected="selected">Large</option>
+		</select>
+</form>
+	<script>
+		// TODO inclass: apply GST 5% + PST 7% to total bill
+		// SOLUTION
+		const GST = 0.05;
+		const PST = 0.07;
+		const count = document.querySelector('.input').value;
+		const cost = document.querySelector('#cost').value;
+		const subtotal = count * cost;
+		const salesTax = GST + PST;
+		const total = (subtotal * salesTax) + subtotal;
+		console.log('Total bill is ', total);
+		console.log('Total bill is ', total.toFixed(2));
+	</script>
+</body>
+</html>
