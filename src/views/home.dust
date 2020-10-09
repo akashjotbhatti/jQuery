@@ -1,0 +1,29 @@
+{>"layout"/}
+
+{<body}
+	<h1>Node.js web server</h1>
+	<ul>
+		<li><a href="/slides">Slideshows 🎦</a></li>
+		<li><a href="/jquery">jQuery &amp; AJAX course files</a>
+			<ul>
+				<li><a href="/topic/image-rollover">Image Rollover</a></li>
+				<li><a href="/topic/colours">Rainbow colours</a></li>
+				<li><a href="/topic/tax">Sales tax</a></li>
+				<li><a href="/topic/fruit">Fruit (route)</a></li>
+				<li><a href="/topic/rss">RSS</a></li>
+			</ul>
+		</li>
+		<li><a href="/social-apis">API course files</a>
+			<ul>
+				<li><a href="/topic/autocomplete">Autocomplete Design Pattern</a></li>
+				<li><a href="/topic/qrcode">QR Codes</a></li>
+				<li><a href="/topic/flickr">Flickr</a></li>
+				<li><a href="/topic/slippyMap">Map</a></li>
+				<li><a href="/topic/twitter">Twitter</a></li>
+			</ul>
+		</li>
+		<li><a href="/calendar.html">Teaching schedule calendar 📅</a></li>
+	</ul>
+
+	<script src="js/critical.js"></script>
+{/body}
