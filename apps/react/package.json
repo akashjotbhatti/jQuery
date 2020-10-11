@@ -1,0 +1,48 @@
+{
+  "name": "react-components",
+  "version": "0.4.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "nodemon",
+    "react": "cross-env NODE_ENV=development npx babel --watch src/components/**/*.jsx --out-dir public/js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ignore-path .gitignore"
+  },
+  "engines": {
+    "node": "12.16.1",
+    "npm": "6.13.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanarts/course-files.git"
+  },
+  "keywords": [
+    "chatbox"
+  ],
+  "author": "Dan BROOKS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vanarts/course-files/issues"
+  },
+  "homepage": "https://github.com/vanarts/course-files#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "babel-plugin-styled-components": "^1.10.6",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.2",
+    "nodemon": "^2.0.3"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.1",
+    "express": "^4.17.1",
+    "react": "^16.13.1"
+  }
+}
