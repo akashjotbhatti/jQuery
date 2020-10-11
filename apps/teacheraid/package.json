@@ -1,0 +1,35 @@
+{
+  "name": "teacheraid",
+  "version": "0.2.0",
+  "description": "Chatbot to automate student workflows and communication",
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext=mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanarts/course-files.git"
+  },
+  "keywords": [
+    "chatbox"
+  ],
+  "author": "Dan BROOKS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vanarts/course-files/issues"
+  },
+  "homepage": "https://github.com/vanarts/course-files#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "nodemon": "^2.0.3"
+  },
+  "dependencies": {
+    "@slack/web-api": "^5.8.1",
+    "express": "^4.17.1"
+  }
+}
