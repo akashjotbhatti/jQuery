@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sales tax</title>
+	<style>
+		label { cursor: pointer; }
+	</style>
+</head>
+
+<body>
+<h1>JSON</h1>
+<h2>Homework assignment</h2>
+
+<h3>Technologies</h3>
+<ul>
+	<li>JavaScript</li>
+	<li>React</li>
+</ul>
+
+<h3>User story</h3>
+<p>As a user, I want to calculate my cost (final price) of a pizza lunch by entering the retail price and selecting my province.</p>
+
+<h3>Steps</h3>
+<ol>
+	<li>As a developer, I want to log <b>one</b> province name (not abbreviation). This is a useful first step to understanding the data store schema (see rates.js)</li>
+	<li>As a developer, I want to log <b>every</b> province name (not abbreviation)</li>
+	<li>
+		<ul>
+			<li>As a developer, I want the DOM to display every province name (not abbreviation)</li>
+			<li>As a user, I want to select my province from a dropdown list.</li>
+		</ul>
+	</li>
+	<li>As a developer, when a province is selected I want to console.log the sales tax</li>
+	<li>As a user, I want to input the pizza price to learn the cost based on my province</li>
+	<li>As a user, I want to input the pizza price to learn the cost based on my province and display as currency.</li>
+</ol>
+
+<h3>Resource</h3>
+<ul>
+	<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map">Array.map</a></a></li>
+</ul>
+
+<h3>Live demo</h3>
+<section id="root"></section>
+
+<!-- Load React. -->
+<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+<!-- Load styled-components -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/styled-components/3.4.9/styled-components.min.js"></script>
+
+<!-- Attach the rates data file -->
+<script src="/js/rates.js"></script>
+
+<!-- Load our React component. -->
+<script src="/js/sales-tax.teacher.js"></script>
+</body>
+</html>

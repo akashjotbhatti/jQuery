@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>React.js Hello Pretty World Component</title>
+  </head>
+  <body>
+    <h1>React.js</h1>
+		<h2>Styled Component</h2>
+		
+		<code>
+			<ol id="demo">
+				<li>This first bullet should be bold/strong</li>
+				<li class="red twenty">Red 20pt font with a dotted underline</li>
+				<li class="blue twenty">Blue 20pt font</li>
+				<li class="twenty">Normal 20pt font</li>
+				<li class="twenty red">Red 20pt font with a dotted underline</li>
+				<li class="red">Red text</li>
+			</ol>
+		</code>
+
+    <h3>Technologies</h3>
+    <ul>
+			<li>React DOM as JSX</li>
+			<li><a href="https://styled-components.com/">Styled Components</a></li>
+			<li>JavaScript</li>
+    </ul>
+
+    <h3>Live demo</h3>
+    <!-- We will put our React component inside this div. -->
+		<div id="root"></div>
+
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+		<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+		
+		<!-- Attach Styled Components -->
+		<script src="https://unpkg.com/styled-components@4.4.1/dist/styled-components.min.js"></script>
+
+    <!-- Load our React component. -->
+    <script src="/js/css.teacher.js"></script>
+  </body>
+</html>
