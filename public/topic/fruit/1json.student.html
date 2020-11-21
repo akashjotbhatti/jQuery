@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Spinner</title>
+	<style>
+		#fruits li[style] { color: white; padding: 1em; margin-left: -1em; }
+		#fruits li[style]::before { content: "•"; color: black; padding-right: 1em; }
+		#loader img { width: 50px; display: block; margin-left: auto; margin-right: auto; }
+	</style>
+</head>
+
+<body>
+	<h1>AJAX</h1>
+	<h2>Local Server via route</h2>
+
+	<h3>Goal</h3>
+	<ol>
+		<li>
+			<p>As a user, I want to see the background colour of fruits.</p>
+			<p>As a dev, display the fruit as a bulleted list from our new route</p>
+		</li>
+		<li>
+				<p>As a user, I want to see the background colour of fruits.
+						<b>and see a visual indicator when the server has slow response times.</b></p>
+				<p>Spinner should be shown in HTML and then hidden when the list appears</p>
+		</li>
+	</ol>
+	
+	<h3>Technologies</h3>
+	<ul>
+		<li>jQuery</li>
+		<li>jQuery AJAX</li>
+		<li>JSON</li>
+		<li>JavaScript</li>
+		<li>node.js</li>
+	</ul>
+
+	<h3>Resources</h3>
+	<ul>
+		<li>MDN doc <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> - Array.from will convert NodeList to Array; useful when using <code>document.querySelectorAll()</code></li>
+		<li><a href="/api/slow-fruit">Local server API call</a></li>
+		<li><a href="http://ajaxload.info">Generate custom spinner</a></li>
+	</ul>
+
+	<h3>Live demo</h3>
+	<h4>Fruits</h4>
+	<div id="loader">
+		<img src="spinner-teacher.gif">
+	</div>
+	<ul id="fruits">
+		<li></li>
+		<li>Todo inclass</li><!-- Do not modify HTML -->
+	</ul>
+
+	<!-- Attach jQuery library -->
+	<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<!-- Attach all the bundles JavaScript files in /src/js -->
+	<script src="/js/critical.js"></script>
+	<!-- Execute page specific function -->
+	<script>
+		function removeLoader() {
+			$('#loader').fadeOut(500, function() {
+				$('loader').remove();
+			});
+		}
+
+		$(window).on('load', function() {
+			setTimeout(removeLoader, 2000);
+		});
+	</script>
+	<script>fruit();</script>
+</body>
+</html>
